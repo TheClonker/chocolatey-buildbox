@@ -3,7 +3,7 @@ FROM mono:3.12.1
 LABEL maintainer="Philip Gisella <philip.gisella@theclonker.de>"
 
 RUN apt-get update && \
-    apt-get install git python3 -y && \
+    apt-get install git python3 procps -y && \
     apt-get clean && \
     git clone https://github.com/chocolatey/choco/ /usr/local/src/choco/
 
@@ -16,3 +16,4 @@ RUN chmod +x build.sh && \
 
 WORKDIR /
 COPY buildbox.py /usr/local/bin/buildbox
+RUN chmod +x /usr/local/bin/buildbox
