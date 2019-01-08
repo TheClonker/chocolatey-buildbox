@@ -1,0 +1,5 @@
+version: "3"
+services:
+  chocolatey-buildbox:
+    build: .
+    image: theclonker/chocolatey-buildbox

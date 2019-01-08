@@ -1,0 +1,3 @@
+export BUILDBOX_REPO=jendrikseipp/rednotebook
+export BUILDBOX_PACKAGE=rednotebook
+buildbox
